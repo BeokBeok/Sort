@@ -16,4 +16,13 @@ fun main() {
         print(selectIterator.next())
     }
     println()
+
+    print("삽입 정렬 : ")
+    val insert = Insert.sort(arrayOf(2, 4, 6, 8, 10, 9, 7, 5, 3, 1))
+        .joinToString()
+    val insertIterator = insert.iterator()
+    while (insertIterator.hasNext()) {
+        print(insertIterator.next())
+    }
+    println()
 }
